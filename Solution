@@ -1,3 +1,5 @@
+// Java Script Solition
+
 process.stdin.resume();
 process.stdin.setEncoding('ascii');
 
@@ -31,3 +33,18 @@ function main() {
     }
     console.log( ans);
 }
+
+
+# Python Solution
+n = int(input())
+arr = list(map(int, input().split()))
+my_hash = {}
+for each in arr:
+    if each in my_hash:
+        my_hash[each] +=1
+    else:
+        my_hash[each] = 1
+count = 0
+for each in my_hash:
+    count += (my_hash[each] // 2)
+print(count)
